@@ -108,7 +108,7 @@ class MapParams(object):
             toponym = reverse_geocode(ll(pos[0], pos[1]))
         self.search_result = SearchResult(
             point,
-            toponym["metaDataProperty"]["GeocoderMetaData"]["text"] if toponym else None
+            toponym["metaDataProperty"]["GeocoderMetaData"]["text"] if toponym else None)
 
 
 # Создание карты с соответствующими параметрами.
